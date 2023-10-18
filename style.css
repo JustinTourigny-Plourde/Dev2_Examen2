@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Raleway&display=swap');
+
+body {
+    background-image: url(https://apical.xyz/medias/commun/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: content-box;
+}
+.logo
+{
+    width: 350px;
+    margin: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: inherit;
+}
+.container {
+    background-color: white;
+    padding: 20px 15px;
+    color: black;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+    margin-bottom: 10px;
+    position: relative;   /* pour le z-index */
+    z-index: 1;   /* pour l'effet d'ombre derrière les notes */
+
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a {
+  text-decoration: none;
+}
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    background-image: linear-gradient(to bottom,#fff 0,#d5d5c8 100%);
+    background-repeat: repeat-x;
+    color: #333; /* Button text color */
+    border: #ccc solid 1px; /* Button border color */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Show a hand cursor on hover */
+    box-shadow: 0 3px 3px 0 rgba(33,37,41,.15);
+    line-height: 1.5;
+    padding: .375rem .75rem;
+    font-weight: 400;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+  
+a.btn:hover {
+    background-image: linear-gradient(to top,#fff 0,#d5d5c8 100%);
+}
+
+.cursive {
+    font-family: 'Homemade Apple', cursive;
+    text-decoration: none;
+}
+ /* .contenuheader {
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    
+} */
+
+.avant {
+    float: left;
+    width: 300px;
+}
+
+.apres {
+    display: flex;
+    float: right;
+    width: 300px;
+    
+} 
+
+
+
+
+
+.contenuheader {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly across the container */
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .centre {
+    flex: 1; /* Take up available space, centering the .logo */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  .menuicones {
+    display: flex;
+    justify-content: flex-end; /* Align items to the end of the container horizontally (right) */
+    align-items: flex-end; /* Align items to the end of the container vertically (bottom) */
+  }
+  
+  .menuicones img {
+    padding: 0 0 5px 15px;
+    background-origin: content-box;
+    width: 25px;
+    height: 25px;
+  }
+
+  .liste {
+    visibility: hidden;
+}
+
+#nav-item-liste:hover .liste {
+    visibility: visible;
+}
+
+.hover-text {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    z-index: 2;
+  }
+  
+  .links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    padding: 5px;
+    z-index: 3;
+  }
+  
+  .hover-text:hover .links {
+    display: block;
+  }
+  
+  .links a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    margin: 5px 0;
+  }
+  .contenuprincipal {
+    z-index: 1;
+  }
+  .liennav {
+    font-family: 'Raleway', sans-serif;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #000;
+  }
+  .liennav:hover{
+    color: darkblue;
+  }
+  .navbar {
+    padding: 10px 0px;
+  }
+
+  .navbar {
+    padding: 10px 0px;
+    background-color: white; /* Add a background color for the full-width effect */
+}
+
+.page_item {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 750;
+    font-size: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #000;
+    text-decoration: none; /* You can remove text-decoration here if you don't want underlines */
+    display:inline;
+}
+
+.liennav:hover {
+    color: darkblue;
+}
+
+.divider {
+  max-width: 250px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+ul {
+  text-decoration: none;
+}
+
+.border-bottom-0{
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem
+}
+.post {
+border: 1px solid #ccc; /* You can customize the border style and color */
+padding:10px; /* Add some padding to create space between the border and content */
+margin: 0px; /* Add space between posts */
+border-radius: 5px;
+}
+.form {
+  text-align: left;
+  margin: 0px;
+}
+.comment {
+  display: none;
+}
+
+
