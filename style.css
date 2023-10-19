@@ -11,8 +11,8 @@ body {
     width: 100%;
     box-sizing: content-box;
 }
-.logo
-{
+
+.logo {
     width: 350px;
     margin: 15px;
     display: block;
@@ -20,6 +20,7 @@ body {
     margin-right: auto;
     box-sizing: inherit;
 }
+
 .container {
     background-color: white;
     padding: 20px 15px;
@@ -31,7 +32,6 @@ body {
     margin-bottom: 10px;
     position: relative;   /* pour le z-index */
     z-index: 1;   /* pour l'effet d'ombre derrière les notes */
-
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -40,8 +40,9 @@ body {
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 a.btn {
     display: inline-block;
     padding: 10px 20px;
@@ -58,7 +59,7 @@ a.btn {
     font-weight: 400;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-  
+
 a.btn:hover {
     background-image: linear-gradient(to top,#fff 0,#d5d5c8 100%);
 }
@@ -67,57 +68,35 @@ a.btn:hover {
     font-family: 'Homemade Apple', cursive;
     text-decoration: none;
 }
- /* .contenuheader {
-    display: block;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    
-} */
-
-.avant {
-    float: left;
-    width: 300px;
-}
-
-.apres {
-    display: flex;
-    float: right;
-    width: 300px;
-    
-} 
-
-
-
-
 
 .contenuheader {
     display: flex;
     justify-content: space-between; /* Distribute items evenly across the container */
     padding-left: 10%;
     padding-right: 10%;
-  }
-  
-  .centre {
+}
+
+.centre {
     flex: 1; /* Take up available space, centering the .logo */
     display: flex;
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
-  }
-  .menuicones {
+}
+
+.menuicones {
     display: flex;
     justify-content: flex-end; /* Align items to the end of the container horizontally (right) */
     align-items: flex-end; /* Align items to the end of the container vertically (bottom) */
-  }
-  
-  .menuicones img {
+}
+
+.menuicones img {
     padding: 0 0 5px 15px;
     background-origin: content-box;
     width: 25px;
     height: 25px;
-  }
+}
 
-  .liste {
+.liste {
     visibility: hidden;
 }
 
@@ -130,9 +109,9 @@ a.btn:hover {
     display: inline-block;
     padding: 10px;
     z-index: 2;
-  }
-  
-  .links {
+}
+
+.links {
     display: none;
     position: absolute;
     top: 100%;
@@ -142,35 +121,49 @@ a.btn:hover {
     border: 1px solid #ccc;
     padding: 5px;
     z-index: 3;
-  }
-  
-  .hover-text:hover .links {
+}
+
+.hover-text:hover .links {
     display: block;
-  }
-  
-  .links a {
+}
+
+.links a {
     display: block;
     text-decoration: none;
     color: #333;
     margin: 5px 0;
-  }
-  .contenuprincipal {
+}
+
+.contenuprincipal {
     z-index: 1;
-  }
-  .liennav {
+    max-width: 1000px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contenusecondaire {
+    z-index: 1;
+    max-width: 1000px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.liennav {
     font-family: 'Raleway', sans-serif;
     padding-left: 25px;
     padding-right: 25px;
     color: #000;
-  }
-  .liennav:hover{
-    color: darkblue;
-  }
-  .navbar {
-    padding: 10px 0px;
-  }
+}
 
-  .navbar {
+.liennav:hover {
+    color: darkblue;
+}
+
+.navbar {
     padding: 10px 0px;
     background-color: white; /* Add a background color for the full-width effect */
 }
@@ -191,43 +184,64 @@ a.btn:hover {
 }
 
 .divider {
-  max-width: 250px;
+    max-width: 250px;
 }
 
 h1 {
-  font-size: 20px;
-  font-weight: 500;
-  
+    font-size: 20px;
+    font-weight: 500;
 }
+
 ul {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-.border-bottom-0{
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0,0,0,.125);
-  border-radius: .25rem
-}
 .post {
-border: 1px solid #ccc; /* You can customize the border style and color */
-padding:10px; /* Add some padding to create space between the border and content */
-margin: 0px; /* Add space between posts */
-border-radius: 5px;
+    border: 1px solid #ccc; /* You can customize the border style and color */
+    /* Add some padding to create space between the border and content */
+    margin: 0px; /* Add space between posts */
+    border-radius: 5px;
 }
+
 .form {
-  text-align: left;
-  margin: 0px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.03);
+    font-size: 16px;
+    font-weight: bold;
 }
+
 .comment {
-  display: none;
+    box-sizing: border-box;
+    display: none;
+    border-bottom: 1px solid #000;
+    padding-top: 20px;
+    padding-left: 40px;
+    margin: 0px; /* Add space between posts */
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+    color: darkblue;
+    font-size: 16px;
+    font-weight: bold;
 }
 
+ul {
+    padding-inline-start : 0px;
+    margin-block-end : 0px;
+    margin-block-start: 0px;
+}
 
+p {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.p404 {
+    color: red;
+}
